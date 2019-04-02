@@ -82,8 +82,8 @@ IIP9up4xwgje9LB7fMxsSkCDTHOk
 PGDG_ACCC4CF8
 
 apt-get update
-apt-get upgrade -y --force-yes
-apt-get install -y --force-yes \
+apt-get upgrade -y
+apt-get install -y \
     apt-transport-https \
     apt-utils \
     bind9-host \

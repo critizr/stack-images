@@ -82,8 +82,8 @@ IIP9up4xwgje9LB7fMxsSkCDTHOk
 PGDG_ACCC4CF8
 
 apt-get update
-apt-get upgrade -y --force-yes
-apt-get install -y --force-yes \
+apt-get upgrade -y
+apt-get install -y \
     autoconf \
     acl \
     apt-transport-https \
@@ -154,7 +154,7 @@ apt-cache search language-pack \
     | cut -d ' ' -f 1 \
     | grep -v '^language\-pack\-\(gnome\|kde\)\-' \
     | grep -v '\-base$' \
-    | xargs apt-get install -y --force-yes --no-install-recommends
+    | xargs apt-get install -y --no-install-recommends
 
 cat > /etc/ImageMagick/policy.xml <<'IMAGEMAGICK_POLICY'
 <policymap>
