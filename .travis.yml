@@ -24,8 +24,4 @@ deploy:
   - provider: script
     script: bin/convert-and-publish-to-heroku.sh
     on:
-      tags: true
-  - provider: script
-    script: sh bin/publish-to-dockerhub.sh
-    on:
       all_branches: true
